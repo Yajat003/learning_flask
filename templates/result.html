@@ -1,0 +1,19 @@
+<h1> 
+    <!-- 
+    Jinja2 Expressio Syntax
+    1. Double curly brackets {{ }} are used as expressions to print backend values or data sources into HTML.
+    -->    
+    Based on the marks you scored you have {{ result }}
+    
+    <!-- 
+    Jinja2 Conditional Statements
+    1. Statement blocks are enclosed within {% %} tags.
+    2. These allow us to build logical flows (like if conditions, else options, or loops) directly inside markup.
+    -->
+
+    {% if results >= 50 %}
+    <h1>You have passed with {{ results }} marks</h1>
+    {% else %}
+    <h2>You have failed and have scored only {{ results }} marks</h2>
+    {% endif %}
+</h1>

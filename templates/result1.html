@@ -1,0 +1,24 @@
+<html>
+<h2>
+    Final Results
+</h2>
+<body>
+        <!-- 
+        Looping Dict.s in Jinja2
+        1. To iterate over a dictionary data structure from the backend, use results.items()
+        2. This provides direct key and value pairing within the statement block loop
+        -->    
+        {% for key,value in results.items() %}        
+            <!-- 
+            Jinja2 comment sections
+            1. Comments are wrapped using {# #} syntax.
+            2. Unlike standard HTML comment tags, Jinja2 comments are entirely stripped out at render time
+              rendering them completely hidden from a user inspecting the browser source code
+            -->
+            {# This is the comment section #}
+            <h1>{{ key }}</h1>
+            <h2>{{ value }}</h2>        
+        {% endfor %} <!-- Ends the conditional for loop block -->
+    </table>
+</body>
+</html>
